@@ -1,0 +1,222 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #352016;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #3b2419;
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #e6ad75;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background:
+        linear-gradient(rgba(30, 17, 10, 0.65),
+                        rgba(30, 17, 10, 0.65)),
+        url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600")
+        center/cover no-repeat;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b87342;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #8b4f2b;
+}
+
+/* Menu Section */
+.menu {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.menu h2,
+.about h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #806a5b;
+    margin-bottom: 35px;
+}
+
+.coffee-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.coffee-card {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.coffee-card:hover {
+    transform: translateY(-8px);
+}
+
+.coffee-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.coffee-card h3 {
+    margin: 18px 0 10px;
+    font-size: 23px;
+}
+
+.coffee-card p {
+    color: #806a5b;
+    line-height: 1.5;
+}
+
+.coffee-card h4 {
+    margin: 15px 0 10px;
+    color: #a45e30;
+    font-size: 20px;
+}
+
+/* About Section */
+.about {
+    background-color: #f0e2d4;
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    background-color: #3b2419;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #d5c1b2;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar ul {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .menu h2,
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .coffee-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
